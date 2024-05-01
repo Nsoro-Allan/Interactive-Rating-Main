@@ -30,7 +30,7 @@ body{
 }
 
 .img-container{
-    width: 11%;
+    width: 13%;
     display: flex;
     flex-direction: column;
     padding: 11px;
@@ -64,8 +64,9 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     margin-top: 10px;
-    gap: 25px;
 }
 
 .rating-card{
@@ -74,11 +75,111 @@ body{
     align-items: center;
     justify-content: center;
     background: hsl(210, 18%, 19%);
-    padding: 18px;  
+    padding: 14.5px 19px;  
     border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.rating-card:hover{
+    background: hsl(216, 12%, 54%);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.rating-card:hover h3{
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.rating-card:active,:focus{
+    background: hsl(25, 97%, 53%);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.rating-card:active,:focus h3{
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .rating-card h3{
     color: hsl(216, 12%, 54%);
     font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.button-container{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.button-container a{
+    padding: 12px;
+    border-radius: 50px;
+    background: hsl(25, 97%, 53%);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    transition: 0.3s ease-in-out;
+}
+
+.button-container a:hover{
+    background: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    transition: 0.3s ease-in-out;
+}
+
+.thanks-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thanks-content{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thanks-content .thanks-span{
+    padding: 8px 15px;
+    background: hsl(213, 22%, 20%);
+    border-radius: 50px;
+}
+
+.thanks-content .thanks-span p{
+    color: hsl(25, 97%, 53%);
+    font-size: 0.9rem;
+}
+
+.thanks-content h1{
+    margin-top: 15px;
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.thanks-content p{
+    font-size: 0.9rem;
+    color: hsl(216, 12%, 54%);
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Responsive Styling Starts Here */
+@media screen and (min-width: 200px) and (max-width: 1000px){
+    .main-container{
+        width: 90%;
+    }
 }
