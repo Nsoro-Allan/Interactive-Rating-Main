@@ -18,7 +18,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    background: linear-gradient(to bottom, hsl(213, 19%, 18%), hsl(213, 19%, 15%));
+    background: linear-gradient(  hsl(210, 18%, 19%), hsl(214, 18%, 15%),hsl(214, 18%, 15%), hsl(214, 18%, 15%), hsl(213, 18%, 12%));
     border-radius: 20px;
     padding: 30px;
 }
@@ -35,7 +35,7 @@ body{
     flex-direction: column;
     padding: 11px;
     border-radius: 50%;
-    background: hsl(216, 12%, 8%);  
+    background: hsl(209, 19%, 23%);  
 }
 
 .img-container img{
@@ -46,3 +46,39 @@ body{
     margin-top: 10px;
 }
 
+.header-content h1{
+    color: hsl(0, 0%, 100%);
+}
+
+.rating-content{
+    margin-top: 5px;
+}
+
+.rating-content p{
+    color: hsl(217, 12%, 63%);
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+.rating-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 25px;
+}
+
+.rating-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: hsl(210, 18%, 19%);
+    padding: 18px;  
+    border-radius: 50%;
+}
+
+.rating-card h3{
+    color: hsl(216, 12%, 54%);
+    font-size: 0.9rem;
+}
